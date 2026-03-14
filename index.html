@@ -25,7 +25,7 @@ a{color:var(--accent);text-decoration:none;transition:opacity .2s}a:hover{opacit
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-up{opacity:1;transform:none}
 
 /* Nav */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,12,16,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 40px;height:60px;display:flex;align-items:center;justify-content:space-between}
@@ -339,7 +339,7 @@ footer{text-align:center;padding:32px 40px;border-top:1px solid var(--border);fo
   </div>
 </section>
 
-<footer>&copy; 2026 Rakesh R Gowda &middot; Built with clarity &middot; B.Sc. CS, Seshadripuram College '14</footer>
+<footer>&copy; 2026 Rakesh R Gowda &middot; Built with clarity &middot; Nature Lover ❤️</footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Typewriter
@@ -347,10 +347,6 @@ const roles=['Technical Lead','Flutter Architect','AI-First Engineer','Healthcar
 let ri=0,ci=0,del=false;const tw=document.getElementById('typewriter');
 function type(){const w=roles[ri];if(!del){tw.textContent=w.substring(0,ci+1);ci++;if(ci===w.length){del=true;setTimeout(type,1800);return}setTimeout(type,70)}else{tw.textContent=w.substring(0,ci-1);ci--;if(ci===0){del=false;ri=(ri+1)%roles.length;setTimeout(type,300);return}setTimeout(type,40)}}
 type();
-
-// Scroll reveal
-const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:.1});
-document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 
 // Active nav
 const secs=document.querySelectorAll('section[id]');
