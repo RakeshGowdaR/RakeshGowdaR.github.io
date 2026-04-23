@@ -1,36 +1,5 @@
 # Rakesh Gowdar — Portfolio
 
-Senior Flutter Engineer portfolio with interactive demos, developer terminal, and smooth animations.
-
-## 🚀 Deploy to GitHub Pages
-
-### Option A — Automatic (Recommended)
-1. Push this repo to `github.com/rakeshgowdar/rakeshgowdar.github.io`
-2. Go to **Settings → Pages → Source → GitHub Actions**
-3. Push to `main` branch — it deploys automatically via `.github/workflows/deploy.yml`
-4. Live at: `https://rakeshgowdar.github.io`
-
-### Option B — Manual (fastest)
-1. Push repo to GitHub
-2. Go to **Settings → Pages**
-3. Set **Source** to `Deploy from a branch`
-4. Select `main` branch, `/ (root)` folder
-5. Click Save → live in ~60 seconds
-
-## 📁 File Structure
-```
-portfolio/
-├── index.html              # Main HTML
-├── css/
-│   └── style.css           # All styles + design tokens
-├── js/
-│   └── main.js             # All interactivity
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # Auto-deploy action
-└── README.md
-```
-
 ## ✨ Features
 - **Developer Terminal** — type `whoami`, `skills`, `projects`, `contact`, `flutter`, `help`
 - **Snake Game** — playable canvas game (WASD / Arrow keys / mobile buttons)
